@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Greet User</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #9face6);
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #2d3436;
+      text-align: center;
+      transition: background-color 0.5s ease;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    .welcome {
+      padding: 20px 40px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="welcome">
+  <h1>Welcome!</h1>
+  <p>This page will greet you with your name.</p>
+</div>
+
+<script>
+  function greet(name) {
+    alert("Hello, " + name + "!");
+  }
+  var userName = prompt("Enter your name:");
+  greet(userName);
+</script>
+
+</body>
+</html>
+
